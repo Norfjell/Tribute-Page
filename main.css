@@ -1,0 +1,159 @@
+:root {
+    --background: #e6e9f0;
+    --footer: #fff;
+    --color: #a2a6b3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background);
+    line-height: 1.5;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro {
+    width: 90%;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h1,
+h2 {
+    color: var(--color);
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 10px 0;
+}
+
+figure {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#janet_parker {
+    margin: 20px 0;
+    width: 90%;
+}
+
+main {
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+hr {
+    width: 100%;
+}
+
+ul {
+    margin-left: 10px;
+}
+
+li {
+    margin: 10px 0;
+}
+
+footer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--footer);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 6px 6px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+}
+
+footer p {
+    text-align: center;
+}
+
+@media (min-width: 800px) {
+    header {
+        flex-direction: row;
+        width: 1280px;
+        justify-content: space-between;
+    }
+
+    main {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 65%;
+        margin-top: 50px;
+    }
+
+    article {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    article h3 {
+        margin: 50px 0;
+    }
+
+    .credentials {
+        width: 30%;
+    }
+
+    footer {
+        width: 25%;
+        margin: 50px 0;
+    }
+
+    footer h4 {
+        margin: 30px 0;
+    }
+
+    figure {
+        width: 90%;
+    }
+
+}
